@@ -1,0 +1,24 @@
+<ng-container *ngIf="animal">
+	<a
+		[routerLink]="['/animals', animal.id]"
+		class="block bg-white shadow-md hover:shadow-xl rounded-lg transition-shadow"
+	>
+		<figure>
+			<div class="relative pb-40">
+				<img
+					class="absolute inset-0 h-full w-full object-cover rounded-t-lg"
+					[src]="animal.avatar"
+					[alt]="animal.name"
+				/>
+			</div>
+			<figcaption class="p-4">
+				<h2 class="mt-2 mb-2 font-bold">
+					{{ animal.name }}
+				</h2>
+				<p class="text-sm">
+					{{ animal.type }}
+				</p>
+			</figcaption>
+		</figure>
+	</a>
+</ng-container>

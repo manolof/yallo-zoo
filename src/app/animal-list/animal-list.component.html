@@ -1,0 +1,21 @@
+<div class="my-8">
+	<ng-container *ngIf="animals$ | async as animals; else loading">
+		<div class="grid gap-8 lg:gap-16 lg:grid-cols-3 md:grid-cols-2 px-8">
+			<ng-container *ngFor="let animal of animals">
+				<app-animal-card [animal]="animal"></app-animal-card>
+			</ng-container>
+		</div>
+
+		<div class="flex justify-center my-8 lg:my-16">
+			<button
+				(click)="updateAnimals()"
+				class="bg-teal-400 hover:bg-teal-500 text-white font-medium py-2 px-16 rounded-full transition-colors"
+			>
+				Update
+			</button>
+		</div>
+	</ng-container>
+	<ng-template #loading>
+		<div class="px-8">Loading...</div>
+	</ng-template>
+</div>

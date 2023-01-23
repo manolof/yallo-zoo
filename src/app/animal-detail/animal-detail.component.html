@@ -1,0 +1,24 @@
+<div class="my-8 px-8">
+	<ng-container *ngIf="animal$ | async as animal; else loading">
+		<figure class="bg-white shadow-md rounded-lg transition-shadow">
+			<div class="relative pb-40">
+				<img
+					class="absolute inset-0 h-full w-full object-cover rounded-t-lg"
+					[src]="animal.avatar"
+					[alt]="animal.name"
+				/>
+			</div>
+			<figcaption class="p-4">
+				<h1 class="mt-2 mb-2 text-2xl font-bold">
+					{{ animal.name }}
+				</h1>
+				<p class="text-lg">
+					{{ animal.type }}
+				</p>
+			</figcaption>
+		</figure>
+	</ng-container>
+	<ng-template #loading>
+		<div class="px-8">Loading...</div>
+	</ng-template>
+</div>

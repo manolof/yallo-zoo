@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderComponent should match snapshot 1`] = `
+<app-header
+  __ngContext__={[Function Number]}
+  headerItems={[Function Array]}
+>
+  <header
+    class="bg-gradient-to-r from-teal-400 to-cyan-600 pb-2 md:pb-4 lg:pb-8 rounded-b-[50%]"
+  >
+    <nav
+      class="container mx-auto flex items-center justify-center py-4"
+    >
+      <a
+        class="text-sm md:text-base lg:text-lg text-white font-medium p-2 md:p-4"
+        routerlink=""
+      >
+         Overview 
+      </a>
+      <a
+        class="text-sm md:text-base lg:text-lg text-white font-medium p-2 md:p-4 text-cyan-100/75 hover:text-white transition-colors"
+        routerlink=""
+      >
+         Mobile 
+      </a>
+      <a
+        class="text-sm md:text-base lg:text-lg text-white font-medium p-2 md:p-4 text-cyan-100/75 hover:text-white transition-colors"
+        routerlink=""
+      >
+         Internet 
+      </a>
+      <a
+        class="text-sm md:text-base lg:text-lg text-white font-medium p-2 md:p-4 text-cyan-100/75 hover:text-white transition-colors"
+        routerlink=""
+      >
+         TV 
+      </a>
+      <a
+        class="text-sm md:text-base lg:text-lg text-white font-medium p-2 md:p-4 text-cyan-100/75 hover:text-white transition-colors"
+        routerlink=""
+      >
+         Support 
+      </a>
+    </nav>
+  </header>
+</app-header>
+`;

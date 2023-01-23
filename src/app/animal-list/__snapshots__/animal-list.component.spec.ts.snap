@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimalListComponent should fetch and render the animals list from the API 1`] = `
+<app-animal-list
+  __ngContext__={[Function Number]}
+  animals$={[Function Observable]}
+  httpService={[Function Object]}
+>
+  <div
+    class="my-8"
+  >
+    <div
+      class="grid gap-8 lg:gap-16 lg:grid-cols-3 md:grid-cols-2 px-8"
+    >
+      <app-animal-card>
+        <a
+          class="block bg-white shadow-md hover:shadow-xl rounded-lg transition-shadow"
+          href="/animals/1"
+        >
+          <figure>
+            <div
+              class="relative pb-40"
+            >
+              <img
+                alt="Tiger"
+                class="absolute inset-0 h-full w-full object-cover rounded-t-lg"
+                src="tiger.jpg"
+              />
+            </div>
+            <figcaption
+              class="p-4"
+            >
+              <h2
+                class="mt-2 mb-2 font-bold"
+              >
+                 Tiger 
+              </h2>
+              <p
+                class="text-sm"
+              >
+                 Mammal 
+              </p>
+            </figcaption>
+          </figure>
+        </a>
+      </app-animal-card>
+      <app-animal-card>
+        <a
+          class="block bg-white shadow-md hover:shadow-xl rounded-lg transition-shadow"
+          href="/animals/2"
+        >
+          <figure>
+            <div
+              class="relative pb-40"
+            >
+              <img
+                alt="Lion"
+                class="absolute inset-0 h-full w-full object-cover rounded-t-lg"
+                src="lion.jpg"
+              />
+            </div>
+            <figcaption
+              class="p-4"
+            >
+              <h2
+                class="mt-2 mb-2 font-bold"
+              >
+                 Lion 
+              </h2>
+              <p
+                class="text-sm"
+              >
+                 Mammal 
+              </p>
+            </figcaption>
+          </figure>
+        </a>
+      </app-animal-card>
+    </div>
+    <div
+      class="flex justify-center my-8 lg:my-16"
+    >
+      <button
+        class="bg-teal-400 hover:bg-teal-500 text-white font-medium py-2 px-16 rounded-full transition-colors"
+      >
+         Update 
+      </button>
+    </div>
+  </div>
+</app-animal-list>
+`;
+
+exports[`AnimalListComponent should refresh the animals list 1`] = `
+<app-animal-list
+  __ngContext__={[Function Number]}
+  animals$={[Function Observable]}
+  httpService={[Function Object]}
+>
+  <div
+    class="my-8"
+  >
+    <div
+      class="grid gap-8 lg:gap-16 lg:grid-cols-3 md:grid-cols-2 px-8"
+    >
+      <app-animal-card>
+        <a
+          class="block bg-white shadow-md hover:shadow-xl rounded-lg transition-shadow"
+          href="/animals/1"
+        >
+          <figure>
+            <div
+              class="relative pb-40"
+            >
+              <img
+                alt="Tiger"
+                class="absolute inset-0 h-full w-full object-cover rounded-t-lg"
+                src="tiger.jpg"
+              />
+            </div>
+            <figcaption
+              class="p-4"
+            >
+              <h2
+                class="mt-2 mb-2 font-bold"
+              >
+                 Tiger 
+              </h2>
+              <p
+                class="text-sm"
+              >
+                 Mammal 
+              </p>
+            </figcaption>
+          </figure>
+        </a>
+      </app-animal-card>
+      <app-animal-card>
+        <a
+          class="block bg-white shadow-md hover:shadow-xl rounded-lg transition-shadow"
+          href="/animals/2"
+        >
+          <figure>
+            <div
+              class="relative pb-40"
+            >
+              <img
+                alt="Lion"
+                class="absolute inset-0 h-full w-full object-cover rounded-t-lg"
+                src="lion.jpg"
+              />
+            </div>
+            <figcaption
+              class="p-4"
+            >
+              <h2
+                class="mt-2 mb-2 font-bold"
+              >
+                 Lion 
+              </h2>
+              <p
+                class="text-sm"
+              >
+                 Mammal 
+              </p>
+            </figcaption>
+          </figure>
+        </a>
+      </app-animal-card>
+    </div>
+    <div
+      class="flex justify-center my-8 lg:my-16"
+    >
+      <button
+        class="bg-teal-400 hover:bg-teal-500 text-white font-medium py-2 px-16 rounded-full transition-colors"
+      >
+         Update 
+      </button>
+    </div>
+  </div>
+</app-animal-list>
+`;
+
+exports[`AnimalListComponent should show loading text if still retrieving data 1`] = `
+<app-animal-list
+  __ngContext__={[Function Number]}
+  animals$="undefined"
+  httpService={[Function Object]}
+>
+  <div
+    class="my-8"
+  >
+    <div
+      class="px-8"
+    >
+      Loading...
+    </div>
+  </div>
+</app-animal-list>
+`;

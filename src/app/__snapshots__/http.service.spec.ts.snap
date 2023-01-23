@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HttpService getAnimalDetail should handle errors 1`] = `undefined`;
+
+exports[`HttpService getAnimalDetail should handle errors 2`] = `
+Array [
+  Array [
+    HttpErrorResponse {
+      "error": "Error",
+      "headers": HttpHeaders {
+        "headers": Map {},
+        "lazyUpdate": null,
+        "normalizedNames": Map {},
+      },
+      "message": "Http failure response for http://test.com/1: 404 Not Found",
+      "name": "HttpErrorResponse",
+      "ok": false,
+      "status": 404,
+      "statusText": "Not Found",
+      "url": "http://test.com/1",
+    },
+  ],
+  Array [
+    "getAnimalDetail failed: Http failure response for http://test.com/1: 404 Not Found",
+  ],
+]
+`;
+
+exports[`HttpService getAnimalDetail should return a single animal 1`] = `
+Object {
+  "avatar": "lion.jpg",
+  "id": "0",
+  "name": "Lion",
+  "type": "Mammal",
+}
+`;
+
+exports[`HttpService getAnimals should handle errors 1`] = `Array []`;
+
+exports[`HttpService getAnimals should handle errors 2`] = `
+Array [
+  Array [
+    HttpErrorResponse {
+      "error": "Error",
+      "headers": HttpHeaders {
+        "headers": Map {},
+        "lazyUpdate": null,
+        "normalizedNames": Map {},
+      },
+      "message": "Http failure response for http://test.com: 404 Not Found",
+      "name": "HttpErrorResponse",
+      "ok": false,
+      "status": 404,
+      "statusText": "Not Found",
+      "url": "http://test.com",
+    },
+  ],
+  Array [
+    "getAnimals failed: Http failure response for http://test.com: 404 Not Found",
+  ],
+]
+`;
+
+exports[`HttpService getAnimals should return an array of animals 1`] = `
+Array [
+  Object {
+    "avatar": "lion.jpg",
+    "id": "0",
+    "name": "Lion",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "tiger.jpg",
+    "id": "1",
+    "name": "Tiger",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "giraffe.jpg",
+    "id": "2",
+    "name": "Giraffe",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "elephant.jpg",
+    "id": "3",
+    "name": "Elephant",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "cat.jpg",
+    "id": "4",
+    "name": "Cat",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "dog.jpg",
+    "id": "5",
+    "name": "Dog",
+    "type": "Mammal",
+  },
+]
+`;
+
+exports[`HttpService getAnimals should return an array of animals, bypassing cache 1`] = `
+Array [
+  Object {
+    "avatar": "lion.jpg",
+    "id": "0",
+    "name": "Lion",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "tiger.jpg",
+    "id": "1",
+    "name": "Tiger",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "giraffe.jpg",
+    "id": "2",
+    "name": "Giraffe",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "elephant.jpg",
+    "id": "3",
+    "name": "Elephant",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "cat.jpg",
+    "id": "4",
+    "name": "Cat",
+    "type": "Mammal",
+  },
+  Object {
+    "avatar": "dog.jpg",
+    "id": "5",
+    "name": "Dog",
+    "type": "Mammal",
+  },
+]
+`;

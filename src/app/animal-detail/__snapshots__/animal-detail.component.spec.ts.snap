@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimalDetailComponent should get animal detail from http service 1`] = `
+<app-animal-detail
+  __ngContext__={[Function Number]}
+  animal$={[Function Observable]}
+  httpService={[Function Object]}
+  route={[Function Object]}
+>
+  <div
+    class="my-8 px-8"
+  >
+    <figure
+      class="bg-white shadow-md rounded-lg transition-shadow"
+    >
+      <div
+        class="relative pb-40"
+      >
+        <img
+          alt="Lion"
+          class="absolute inset-0 h-full w-full object-cover rounded-t-lg"
+          src="lion.jpg"
+        />
+      </div>
+      <figcaption
+        class="p-4"
+      >
+        <h1
+          class="mt-2 mb-2 text-2xl font-bold"
+        >
+           Lion 
+        </h1>
+        <p
+          class="text-lg"
+        >
+           Mammal 
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+</app-animal-detail>
+`;

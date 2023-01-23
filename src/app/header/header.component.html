@@ -1,0 +1,19 @@
+<header
+	class="bg-gradient-to-r from-teal-400 to-cyan-600 pb-2 md:pb-4 lg:pb-8 rounded-b-[50%]"
+>
+	<nav class="container mx-auto flex items-center justify-center py-4">
+		<ng-container *ngFor="let headerItem of headerItems">
+			<a
+				routerLink=""
+				[ngClass]="{
+					'text-cyan-100/75': !headerItem.active,
+					'hover:text-white': !headerItem.active,
+					'transition-colors': !headerItem.active
+				}"
+				class="text-sm md:text-base lg:text-lg text-white font-medium p-2 md:p-4"
+			>
+				{{ headerItem.title }}
+			</a>
+		</ng-container>
+	</nav>
+</header>
